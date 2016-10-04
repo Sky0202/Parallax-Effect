@@ -13,7 +13,7 @@ import android.widget.ListView;
 /**
  * 作者：SKY
  * 创建时间：2016-9-10 19:34
- * 描述：
+ * 描述：自定义的listView
  */
 public class ParallaxeListView extends ListView {
 

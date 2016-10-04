@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:clipToPadding="true"
     tools:context="com.sky.parallaxeffect.MainActivity">
 
     <com.sky.parallaxeffect.ParallaxeListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="#c6c5c5"
+        android:dividerHeight="0.5dp"/>
 
 </LinearLayout>

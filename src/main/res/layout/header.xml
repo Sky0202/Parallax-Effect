@@ -12,6 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/parallax_img"/>
+        android:src="@drawable/parallax"/>
 
 </LinearLayout>

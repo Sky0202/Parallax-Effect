@@ -1,9 +1,11 @@
 package com.sky.parallaxeffect;
 
-import android.support.v7.app.AppCompatActivity;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.view.WindowManager;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,18 +15,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (Build.VERSION.SDK_INT >= 19) {
+            //透明状态栏
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+        }
+
         initView();
     }
 
     private void initView () {
         ParallaxeListView lv = (ParallaxeListView) findViewById(R.id.lv);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Cheeses.NAMES);
+
+        BaseAdapter adapter = new MyAdapter();
+
         View view = View.inflate(this, R.layout.header, null);
         lv.addHeaderView(view);
         ImageView headView = (ImageView) view.findViewById(R.id.head);
         lv.setImageView(headView);
 
         lv.setAdapter(adapter);
+
     }
 
 }

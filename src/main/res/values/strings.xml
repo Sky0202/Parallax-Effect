@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ParallaxEffect</string>
+    <string name="textview_name">TextView</string>
+    <string name="textview_desc">TextView</string>
 </resources>
