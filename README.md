@@ -3,4 +3,4 @@
 
 ## 效果展示
 
-![image](https://github.com/Sky0202/Parallax-Effect/tree/master/screenShots/action.gif)!
+![image](https://github.com/Sky0202/Parallax-Effect/blob/master/screenShots/action.gif) !
